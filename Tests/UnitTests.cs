@@ -7,7 +7,7 @@ namespace TravisCILab
     public class Math
     {
         [Test]
-        public void Add_Valid()
+        public void Add_ValidNguyen()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
@@ -15,7 +15,7 @@ namespace TravisCILab
         }
 
         [Test]
-        public void Add_Invalid()
+        public void Add_InvalidNguyen()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
@@ -23,7 +23,7 @@ namespace TravisCILab
         }
 
         [Test]
-        public void Add_Null()
+        public void Add_NullNguyen()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -33,21 +33,21 @@ namespace TravisCILab
         // Implement 3 tests per operation, following a similar pattern as above
 
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_ValidNguyen()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
             Assert.AreEqual(12, Program.Add("5", "7"));
         }
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_InvalidNguyen()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
             Assert.Throws<FormatException>(() => Program.Add("a", "a"));
         }
         [Test]
-        public void Subtract_Null()
+        public void Subtract_NullNguyen()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -56,21 +56,21 @@ namespace TravisCILab
 
 
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_ValidNguyen()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
             Assert.AreEqual(12, Program.Add("5", "7"));
         }
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_InvalidNguyen()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
             Assert.Throws<FormatException>(() => Program.Add("a", "a"));
         }
         [Test]
-        public void Multiply_Null()
+        public void Multiply_NullNguyen()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -79,21 +79,21 @@ namespace TravisCILab
 
 
         [Test]
-        public void Divide_Valid()
+        public void Divide_ValidNguyen()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
             Assert.AreEqual(12, Program.Add("5", "7"));
         }
         [Test]
-        public void Divide_Invalid()
+        public void Divide_InvalidNguyen()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
             Assert.Throws<FormatException>(() => Program.Add("a", "a"));
         }
         [Test]
-        public void Divide_Null()
+        public void Divide_NullNguyen()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -102,21 +102,21 @@ namespace TravisCILab
 
 
         [Test]
-        public void Power_Valid()
+        public void Power_ValidNguyen()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
             Assert.AreEqual(12, Program.Add("5", "7"));
         }
         [Test]
-        public void Power_Invalid()
+        public void Power_InvalidNguyen()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
             Assert.Throws<FormatException>(() => Program.Add("a", "a"));
         }
         [Test]
-        public void Power_Null()
+        public void Power_NullNguyen()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
